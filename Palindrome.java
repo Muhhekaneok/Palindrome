@@ -8,6 +8,9 @@ public class Palindrome {
         String string = displayText();
         System.out.print("Reverse of this: ");
         System.out.println(displayReverseString(string));
+
+        String getReverseBackToOriginal = displayReverseString(string);
+        System.out.println("Get reverse back to original: " + displayReverseString(getReverseBackToOriginal));
     }
 
     public static String displayText() {
