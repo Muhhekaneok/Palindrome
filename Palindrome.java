@@ -39,7 +39,6 @@ public class Palindrome {
 
     public static boolean checkForPalindromeForTwoResults(String textParam1, String textParam2) {
         String pal = textParam1 + textParam2;
-//        return textParam1.equals(textParam2);
         return isPalindrome(pal);
     }
 }
