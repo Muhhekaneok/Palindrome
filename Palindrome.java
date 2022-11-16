@@ -31,10 +31,10 @@ public class Palindrome {
 
     public static boolean isPalindrome(String string) {
         for (int i = 0; i < string.length() / 2; i++) {
-            if (string.charAt(i) == string.charAt(string.length() - 1 - i))
-                return true;
+            if (string.charAt(i) != string.charAt(string.length() - 1 - i))
+                return false;
         }
-        return false;
+        return true;
     }
 
     public static boolean checkForPalindromeForTwoResults(String textParam1, String textParam2) {
